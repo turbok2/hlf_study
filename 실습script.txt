@@ -1,0 +1,608 @@
+--------------------------------------------------------------------------------------
+prerequisites
+--------------------------------------------------------------------------------------
+#curl install
+sudo apt install curl
+curl --version
+
+#docker install
+sudo apt install docker.io  docker-compose  software-properties-common
+sudo usermod -aG docker $USER 
+     # 현재 접속중인 사용자에게 권한주기
+#시스템 종료하고 다시 login
+docker --version
+docker-compose --version
+
+# go install
+curl -O https://storage.googleapis.com/golang/go1.11.2.linux-amd64.tar.gz
+tar -xvf go1.11.2.linux-amd64.tar.gz
+sudo mv go /usr/local
+sudo ln -s /usr/local/go/bin/go  /usr/local/bin/go
+vi  ~/.profile    # 아래 내용 추가
+       export GOPATH=$HOME/go
+       export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+source ~/.profile
+go version
+
+# nodejs install
+sudo apt update
+sudo apt install build-essential libssl-dev
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
+bash install_nvm.sh
+source ~/.profile
+nvm install v8.11.1
+node -v & npm -v
+
+# python install
+python --version    # 설치 여부 확인 (Python 2.7.12 가 나오면 아래 설치 명령 필요 없음)
+sudo apt install -y python
+
+# git install
+git --version    # 설치 여부 확인 (git 2.7.4 가 나오면 아래 설치 명령 필요 없음)
+sudo apt install -y git
+
+# fabric samples install
+curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.1   1.4.1   0.4.14
+
+vi ~/.profile   #아래 내용 추가
+	export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin   뒤에 추가 :~/fabric-samples/bin
+	export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:~/fabric-samples/bin
+	
+source ~/.profile
+crpytogen   # 실행 여부 확인
+ls
+tree –L 1 ./fabric-samples/
+
+--------------------------------------------------------------------------------------
+Writing Your First Application
+--------------------------------------------------------------------------------------
+docker ps -a
+cd ~/fabric-samples/basic-network 
+./teardown.sh
+cd ~/fabric-samples/first-network 
+./byfn.sh down
+
+docker ps -a
+docker rm -f $(docker ps -aq)
+docker rmi -f $(docker images dev-* -q)
+docker network prune
+cd ~/fabric-samples/fabcar && ls
+./startFabric.sh
+
+cd javascript  && ls
+cat package.json && npm install
+ls && tree -L 1 node_modules/
+
+node enrollAdmin.js
+docker logs –f ca.example.com
+
+node registerUser.js
+docker logs –f ca.example.com
+
+node query.js
+node invoke.js
+-----
+docker exec –it peer0.org1.example.com bash
+ls
+docker ps –a
+docker exec peer0.org1.example.com peer channel list
+
+docker network inspect net_basic 
+
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query -C mychannel -n fabcar -c '{"function":"queryAllCars","Args":["CAR1"]}'
+
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n fabcar -c '{"function":"createCar","Args":["CAR20","Hyundai","sonata","red","eric"]}'
+
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query -C mychannel -n fabcar -c '{"function":"queryAllCars","Args":["CAR20"]}'
+
+--------------------------------------------------------------------------------------
+REST API 테스트 방법
+
+Postman 설치
+  https://www.getpostman.com/ 을 방문하여 다운로드 후 설치하거나 크롬 브라우저의 extention에서 검색하여 설치하도록 한다.
+여기서는 후자를 설명하록 하겠다. 
+https://chrome.google.com/webstore/category/extensions 이 주소로 이동한 후 스토어 검색에 postman 이라고 입력 후 검색결과에서 postman 이 나오지 않으므로(postman 내부 정책 변경으로) 아래 주소를 직접 입력하여 설치한다.
+https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
+[Chrome에 추가] - [앱추가]하고 실행은 chrome://apps/  입력하고 postman 선택.
+회원가입 후 로그인하거나, 맨 하단의  Take me straight to the app (비회원 로그인) 이용 가능
+
+--------------------------------------------------------------------------------------
+Chaincode for Developers
+--------------------------------------------------------------------------------------
+mkdir -p $GOPATH/src/sacc && cd $GOPATH/src/sacc
+touch sacc.go
+==
+package main
+import (
+    "fmt"
+    "github.com/hyperledger/fabric/core/chaincode/shim"
+    "github.com/hyperledger/fabric/protos/peer"
+)
+type SimpleAsset struct {
+}
+func (t *SimpleAsset) Init(stub shim.ChaincodeStubInterface) peer.Response {
+    // Get the args from the transaction proposal
+    args := stub.GetStringArgs()
+    if len(args) != 2 {
+        return shim.Error("Incorrect arguments. Expecting a key and a value")
+    }
+    // Set up any variables or assets here by calling stub.PutState()
+    // We store the key and the value on the ledger
+    err := stub.PutState(args[0], []byte(args[1]))
+    if err != nil {
+        return shim.Error(fmt.Sprintf("Failed to create asset: %s", args[0]))
+    }
+    return shim.Success(nil)
+}
+func (t *SimpleAsset) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
+    // Extract the function and args from the transaction proposal
+    fn, args := stub.GetFunctionAndParameters()
+    var result string
+    var err error
+    if fn == "set" {
+        result, err = set(stub, args)
+    } else { // assume 'get' even if fn is nil
+        result, err = get(stub, args)
+    }
+    if err != nil {
+        return shim.Error(err.Error())
+    }
+    // Return the result as success payload
+    return shim.Success([]byte(result))
+}
+func set(stub shim.ChaincodeStubInterface, args []string) (string, error) {
+    if len(args) != 2 {
+        return "", fmt.Errorf("Incorrect arguments. Expecting a key and a value")
+    }
+    err := stub.PutState(args[0], []byte(args[1]))
+    if err != nil {
+        return "", fmt.Errorf("Failed to set asset: %s", args[0])
+    }
+    return args[1], nil
+}
+func get(stub shim.ChaincodeStubInterface, args []string) (string, error) {
+    if len(args) != 1 {
+        return "", fmt.Errorf("Incorrect arguments. Expecting a key")
+    }
+    value, err := stub.GetState(args[0])
+    if err != nil {
+        return "", fmt.Errorf("Failed to get asset: %s with error: %s", args[0], err)
+    }
+    if value == nil {
+        return "", fmt.Errorf("Asset not found: %s", args[0])
+    }
+    return string(value), nil
+}
+func main() {
+    if err := shim.Start(new(SimpleAsset)); err != nil {
+        fmt.Printf("Error starting SimpleAsset chaincode: %s", err)
+    }
+}
+==
+go get -u github.com/hyperledger/fabric/core/chaincode/shim
+go build
+
+cd chaincode-docker-devmode
+docker-compose -f docker-compose-simple.yaml up
+docker exec -it chaincode bash
+cd sacc
+go build
+CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc:0 ./sacc
+
+docker exec -it cli bash
+peer chaincode install -p chaincodedev/chaincode/sacc -n mycc -v 0
+peer chaincode instantiate -n mycc -v 0 -c '{"Args":["a","10"]}' -C myc
+
+peer chaincode invoke -n mycc -c '{"Args":["set", "a", "20"]}' -C myc
+peer chaincode query -n mycc -c '{"Args":["query","a"]}' -C myc
+-----------------------
+cd ~/fabric-samples/fabcar
+ls
+cp startFabric.sh start_sacc.sh
+=====
+set -e
+# don't rewrite paths for Windows Git Bash users
+export MSYS_NO_PATHCONV=1
+starttime=$(date +%s)
+CC_SRC_LANGUAGE=${1:-"go"}
+CC_SRC_LANGUAGE=`echo "$CC_SRC_LANGUAGE" | tr [:upper:] [:lower:]`
+if [ "$CC_SRC_LANGUAGE" = "go" -o "$CC_SRC_LANGUAGE" = "golang"  ]; then
+  CC_RUNTIME_LANGUAGE=golang
+  CC_SRC_PATH=github.com/sacc
+elif [ "$CC_SRC_LANGUAGE" = "javascript" ]; then
+  CC_RUNTIME_LANGUAGE=node # chaincode runtime language is node.js
+  CC_SRC_PATH=/opt/gopath/src/github.com/fabcar/javascript
+elif [ "$CC_SRC_LANGUAGE" = "typescript" ]; then
+  CC_RUNTIME_LANGUAGE=node # chaincode runtime language is node.js
+  CC_SRC_PATH=/opt/gopath/src/github.com/fabcar/typescript
+  echo Compiling TypeScript code into JavaScript ...
+  pushd ../chaincode/fabcar/typescript
+  npm install
+  npm run build
+  popd
+  echo Finished compiling TypeScript code into JavaScript
+else
+  echo The chaincode language ${CC_SRC_LANGUAGE} is not supported by this script
+  echo Supported chaincode languages are: go, javascript, and typescript
+  exit 1
+fi
+
+# clean the keystore
+rm -rf ./hfc-key-store
+# launch network; create channel and join peer to channel
+cd ../basic-network
+./start.sh
+# Now launch the CLI container in order to install, instantiate chaincode
+# and prime the ledger with our 10 cars
+docker-compose -f ./docker-compose.yml up -d cli
+docker ps -a
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode install -n sacc -v 1.0 -p "$CC_SRC_PATH" -l "$CC_RUNTIME_LANGUAGE"
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode instantiate -o orderer.example.com:7050 -C mychannel -n sacc -l "$CC_RUNTIME_LANGUAGE" -v 1.0 -c '{"Args":["a","100"]}' -P "OR ('Org1MSP.member','Org2MSP.member')"
+sleep 10
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n sacc -c '{"Args":["get","a"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n sacc -c '{"Args":["set","a","500"]}'
+
+cat <<EOF
+Total setup execution time : $(($(date +%s) - starttime)) secs ...
+EOF
+====
+./start_sacc.sh
+-------
+docker exec -it cli bash
+peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n sacc -c '{"Args":["set","a","600"]}'
+
+peer chaincode query  -C mychannel -n sacc -c '{"Args":["get","a"]}'
+
+cd ../basic-network
+./teardown.sh
+--------------------------------------------------------------------------------------
+chaincode 배포
+--------------------------------------------------------------------------------------
+mkdir ~/fabric-samples/demo  && cd ~/fabric-samples/demo
+cp ~/fabric-samples/fabcar/startFabric.sh start_example02.sh
+
+start_example02.sh
+====
+#!/bin/bash
+# Exit on first error
+set -e
+# don't rewrite paths for Windows Git Bash users
+export MSYS_NO_PATHCONV=1
+starttime=$(date +%s)
+CC_SRC_LANGUAGE=${1:-"go"}
+CC_SRC_LANGUAGE=`echo "$CC_SRC_LANGUAGE" | tr [:upper:] [:lower:]`
+if [ "$CC_SRC_LANGUAGE" = "go" -o "$CC_SRC_LANGUAGE" = "golang"  ]; then
+  CC_RUNTIME_LANGUAGE=golang
+  CC_SRC_PATH=github.com/chaincode_example02/go
+else
+  echo The chaincode language ${CC_SRC_LANGUAGE} is not supported by this script
+  echo Supported chaincode languages are: go, javascript, and typescript
+  exit 1
+fi
+
+# clean the keystore
+rm -rf ./hfc-key-store
+# launch network; create channel and join peer to channel
+cd ../basic-network
+./start.sh
+# Now launch the CLI container in order to install, instantiate chaincode
+# and prime the ledger with our 10 cars
+docker-compose -f ./docker-compose.yml up -d cli
+docker ps -a
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode install -n example02 -v 1.0 -p "$CC_SRC_PATH" -l "$CC_RUNTIME_LANGUAGE"
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode instantiate -o orderer.example.com:7050 -C mychannel -n example02 -l "$CC_RUNTIME_LANGUAGE" -v 1.0 -c '{"Args":["init","a","100","b","200"]}' -P "OR ('Org1MSP.member','Org2MSP.member')"
+sleep 5
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","a"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","b"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n example02 -c '{"function":"invoke","Args":["a","b","10"]}'
+sleep 5
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","a"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","b"]}'
+cat <<EOF
+Total setup execution time : $(($(date +%s) - starttime)) secs ...
+EOF
+====
+./start_example02.sh
+docker exec -it cli bash
+peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n example02 -c '{"Args":[“invoke","a“,”b”,”50”]}'
+peer chaincode query  -C mychannel -n example02 -c '{"Args":[“query","a"]}'
+cd ../basic-network
+./teardown.sh
+
+cp start_example02.sh  new_start_example02.sh
+new_start_example02.sh
+======
+#!/bin/bash
+# Exit on first error
+set -e
+# don't rewrite paths for Windows Git Bash users
+export MSYS_NO_PATHCONV=1
+starttime=$(date +%s)
+CC_SRC_LANGUAGE=${1:-"go"}
+CC_SRC_LANGUAGE=`echo "$CC_SRC_LANGUAGE" | tr [:upper:] [:lower:]`
+if [ "$CC_SRC_LANGUAGE" = "go" -o "$CC_SRC_LANGUAGE" = "golang"  ]; then
+    CC_RUNTIME_LANGUAGE=golang
+    CC_SRC_PATH=github.com/chaincode_example02/go
+else
+    echo The chaincode language ${CC_SRC_LANGUAGE} is not supported by this script
+    echo Supported chaincode languages are: go, javascript, and typescript
+    exit 1
+fi
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode install -n example02 -v 2.0 -p "$CC_SRC_PATH" -l "$CC_RUNTIME_LANGUAGE"
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode upgrade -o orderer.example.com:7050 -C mychannel -n example02 -l "$CC_RUNTIME_LANGUAGE" -v 2.0 -c '{"Args":["init","a","100","b","200"]}' -P "OR ('Org1MSP.member','Org2MSP.member')"
+sleep 5
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","a"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","b"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n example02 -c '{"function":"invoke","Args":["a","b","10"]}'
+sleep 5
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","a"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query  -C mychannel -n example02 -c '{"Args":["query","b"]}'
+cat <<EOF
+Total setup execution time : $(($(date +%s) - starttime)) secs ...
+EOF
+======
+./new_start_example02.sh
+--------------------------------------------------------------------------------------
+Build Your First Network
+--------------------------------------------------------------------------------------
+네트워크 구축 단계 요약
+A. generate crypto-config , channel-artifacts
+1. configtx.yaml 수정
+2. crypto-config.yaml 수정
+3. generate.sh 편집 및 실행
+3.1 crypto-config 폴더에 인증키 생성
+cryptogen generate --config=./crypto-config.yaml
+3.2 genesis.block 생성
+configtxgen -profile OneOrgOrdererGenesis -outputBlock ./config/genesis.block
+3.3 채널 구성파일 생성
+configtxgen -profile OneOrgChannel -outputCreateChannelTx ./config/"$CHANNEL_NAME".tx 
+3.4 채널별,조직별로 앵커피어 구성파일 생성
+configtxgen -profile OneOrgChannel -outputAnchorPeersUpdate ./config/Org1MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org1MSP
+# crypto-config 와 channel-artifacts 가 이미 완료되었다면 1-3은 생략 가능
+
+B. start network
+4. docker-compose.yml 수정
+5. start.sh 편집 및 실행
+5.1 컨테이너 실행
+docker-compose -f docker-compose.yml up -d ca.example.com orderer.example.com peer0.org1.example.com couchdb
+5.2 Create the channel
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel create -o orderer.example.com:7050 -c "$CHANNEL_NAME" -f /etc/hyperledger/configtx/"$CHANNEL_NAME".tx
+5.3 Join peer0.org1.example.com to the channel.
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b "$CHANNEL_NAME".block
+
+5.4 조직에 peer가 여러 개인 경우 앵커피어 설정, 각 조직마다 실행 필요
+docker exec  -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel update -o orderer.example.com:7050 -c "$CHANNEL_NAME" -f /etc/hyperledger/configtx/Org1MSPanchors.tx 
+
+5.5 각 peer를 채널에 조인시켜려면 해당 채널의 block을 패치해와야 한다.
+#fetch
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer1.org1.example.com peer channel fetch 0 "$CHANNEL_NAME".block --channelID "$CHANNEL_NAME" --orderer orderer.example.com:7050
+# Join peer1.org1.example.com to the channel.
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer1.org1.example.com peer channel join -b "$CHANNEL_NAME".block
+
+C. test chaincode
+# 패브릭 네트워크가 이미 실행중이라면 1-5은 생략 가능
+# 단, 체인코드 실행 중 실패하여 다시 install부터 하려면 
+# ./teardown.sh로 네트워크를 종료하고 start.sh 로 다시 기동한 후 실험
+6. cc_start_sacc.sh 편집 및 실행
+6.1 cli 컨테이너 실행
+docker-compose -f ./docker-compose.yml up -d cli
+6.2 체인코드 install
+docker exec  cli peer chaincode install -n "$CC_NAME" -v 1.0 -p "$CC_SRC_PATH" -l "$CC_RUNTIME_LANGUAGE"
+6.3 체인코드 instantiate
+docker exec  cli peer chaincode instantiate -o orderer.example.com:7050 -C "$CHANNEL_NAME" -n "$CC_NAME" -l "$CC_RUNTIME_LANGUAGE" -v 1.0 -c '{"Args":["a","15"]}' -P "OR ('Org1MSP.member')"
+6.4 query test
+docker exec  peer0.org1.example.com peer chaincode query  -C "$CHANNEL_NAME" -n sacc -c '{"Args":["get","a"]}'
+6.5 invoke test
+docker exec  peer0.org1.example.com peer chaincode invoke  -C "$CHANNEL_NAME" -n sacc -c '{"Args":["set","a","130"]}'
+
+D. terminate network
+1. 종료 스크립트 이용   ./teardown.sh  ./byfn.sh down 등 
+2. 사용한 docker-compose.yml 을 이용   docker-compose -f docker-compose.yml up 
+3. 직접 종료  docker rm $(docker ps -aq)  docker rmi $(docker images dev-* -q)
+4. 네트워크 삭제  docker network prune
+
+--------------------------------------------------------------------------------------
+Using Private Data in Fabric
+--------------------------------------------------------------------------------------
+#Start the network
+cd ~/fabric-samples/first-network
+./byfn.sh up -c mychannel -s couchdb
+
+#Install chaincode on all peers
+#cli_org1에 접속
+docker exec -it cli bash
+===============================
+root@81eac8493633:/opt/gopath/src/github.com/hyperledger/fabric/peer#   
+//cli  컨테이너 안에서 다음 작업 진행
+
+#org1 상태
+#chaincode install  to peer1.org1 
+export CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+peer chaincode install -n marblesp -v 1.0 -p github.com/chaincode/marbles02_private/go/
+---------------------------------------------------
+#chaincode install  to peer1.org1 
+export CORE_PEER_ADDRESS=peer1.org1.example.com:8051
+peer chaincode install -n marblesp -v 1.0 -p github.com/chaincode/marbles02_private/go/
+---------------------------------------------------
+#org2 으로 전환
+
+export CORE_PEER_LOCALMSPID=Org2MSP
+export PEER0_ORG2_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
+export CORE_PEER_TLS_ROOTCERT_FILE=$PEER0_ORG2_CA
+export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp 
+
+#chaincode install  to peer0.org2 
+export CORE_PEER_ADDRESS=peer0.org2.example.com:9051
+peer chaincode install -n marblesp -v 1.0 -p github.com/chaincode/marbles02_private/go/
+-------------------------------------------------------------
+#chaincode install  to peer1.org2 
+export CORE_PEER_ADDRESS=peer1.org2.example.com:10051
+peer chaincode install -n marblesp -v 1.0 -p github.com/chaincode/marbles02_private/go/
+
+#Instantiate the chaincode on the channel
+//orderer 권한 필요(Instantiate the chaincode)
+#chaincode instantiate  to peer1.org2 
+export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+
+peer chaincode instantiate -o orderer.example.com:7050 -C mychannel -n marblesp  -v 1.0 -c '{"Args":["init"]}' -P "OR ('Org1MSP.member','Org2MSP.member')"   --tls --cafile "$ORDERER_CA"  --collections-config $GOPATH/src/github.com/chaincode/marbles02_private/collections_config.json 
+sleep 10
+
+#store private data
+#org1 으로 전환
+export CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+export CORE_PEER_LOCALMSPID=Org1MSP
+export CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp 
+export PEER0_ORG1
+_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+
+#invoke initMarble function
+//marble1 추가
+export MARBLE=$(echo -n "{\"name\":\"marble1\",\"color\":\"blue\",\"size\":35,\"owner\":\"tom\",\"price\":99}" | base64 | tr -d \\n)
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["initMarble"]}'  --transient "{\"marble\":\"$MARBLE\"}"
+
+#qury the private data as an authorized peer
+#org1 상태
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarble","marble1"]}' 
+
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble1"]}' 
+=> 정상 결과 출력
+
+#qury the private data as an unauthorized peer
+#org2로 전환
+export CORE_PEER_ADDRESS=peer0.org2.example.com:9051
+export CORE_PEER_LOCALMSPID=Org2MSP
+export PEER0_ORG2_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
+export CORE_PEER_TLS_ROOTCERT_FILE=$PEER0_ORG2_CA
+export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp 
+
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarble","marble1"]}' 
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble1"]}' 
+
+=>
+Error: endorsement failure during query. response: status:500 message:"{\"Error\":\"Failed to get private details for marble1: GET_STATE failed: transaction ID: 926ae4cd90fda1051e7ae20a812e65781561ca71716d6b1d5efa1293baa09a36: tx creator does not have read access permission on privatedata in chaincodeName:marblesp collectionName: collectionMarblePrivateDetails\"}"
+
+#purge private data
+#org1으로 전환
+export CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+export CORE_PEER_LOCALMSPID=Org1MSP
+export CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp 
+export PEER0_ORG1
+_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+
+==========================================================
+#open a new terminal and view private data logs
+
+docker logs peer0.org1.example.com 2>&1 | grep -i -a -E 'private|pvt|privdata'
+==========================================================
+
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble1"]}' 
+
+=>query를 하고 로그를 보면 블록수는 변하지 않음[6]
+--------------------
+#marble2 추가
+export MARBLE=$(echo -n "{\"name\":\"marble2\",\"color\":\"blue\",\"size\":35,\"owner\":\"tom\",\"price\":99}" | base64 | tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["initMarble"]}'  --transient "{\"marble\":\"$MARBLE\"}"
+=>invoke를 하고 로그를 보면 블록수는 증가함[6]
+------------------------------------------
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble1"]}' 
+=> 아직까지는 검색가능함
+----------------------------------------
+#transfer marble2 to joe 
+export MARBLE_OWNER=$(echo -n "{\"name\":\"marble2\",\"owner\":\"joe\"}" | base64 | tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["transferMarble"]}'  --transient "{\"marble_owner\":\"$MARBLE_OWNER\"}"
+=>invoke를 하고 로그를 보면 블록수는 증가함[7]
+-------------------------------------------------------------------
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble1"]}' 
+=> 아직까지는 private data 검색가능함
+-------------------------------------------------------------
+#transfer marble2 to tom
+export MARBLE_OWNER=$(echo -n "{\"name\":\"marble2\",\"owner\":\"tom\"}" | base64 | tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["transferMarble"]}'  --transient "{\"marble_owner\":\"$MARBLE_OWNER\"}"
+=>invoke를 하고 로그를 보면 블록수는 증가함[8]
+-------------------------------------------------
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble1"]}' 
+=> 아직까지는 private data  검색가능함
+-------------------------------------------------------------------
+#transfer marble2 to jerry
+export MARBLE_OWNER=$(echo -n "{\"name\":\"marble2\",\"owner\":\"jerry\"}" | base64 | tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["transferMarble"]}'  --transient "{\"marble_owner\":\"$MARBLE_OWNER\"}"
+=>invoke를 하고 로그를 보면 블록수는 증가함[9]
+-------------------------------------------------
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble1"]}' 
+
+=> Error: endorsement failure during query. response: status:500 message:"{\"Error\":\"Marble private details does not exist: marble1\"}" 
+이제 private data 읽을 수 없음.
+
+#정리
+collections_config.json 파일에서 collection  readMarblePrivateDetails의 blockToLive 는 3으로 지정되었 있음.
+marble1 이 ininMarble 에 의해 invoke 된 후 블록번호는 6
+그 다음 invoke 후 블록번호 증가하여 7 일때는 query가 가능
+그 다음 invoke 후 블록번호 증가하여 8 일때는 query가 가능
+그 다음 invoke 후 블록번호 증가하여 9 일때는 query가 가능
+그 다음 invoke 후 블록번호 증가하여 10일 때는 blockToLive 값 3 이 지나 marble1은 삭제되었고 query가 되지 않는다.
+
+#Using indexes with private data
+#marble3 추가
+export MARBLE=$(echo -n "{\"name\":\"marble3\",\"color\":\"blue\",\"size\":70,\"owner\":\"tom\",\"price\":103}" | base64| tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["initMarble"]}'  --transient "{\"marble\":\"$MARBLE\"}"
+sleep 3
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble3"]}' 
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarble","marble3"]}' 
+------------
+#marble3 삭제
+export MARBLE_DELETE=$(echo -n "{\"name\":\"marble3\"}" | base64| tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["delete"]}'  --transient "{\"marble_delete\":\"$MARBLE_DELETE\"}"
+sleep 3
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble3"]}' 
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarble","marble3"]}' 
+---------------------------------
+#marble3 추가
+export MARBLE=$(echo -n "{\"name\":\"marble3\",\"color\":\"blue\",\"size\":70,\"owner\":\"tom\",\"price\":103}" | base64| tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["initMarble"]}'  --transient "{\"marble\":\"$MARBLE\"}"
+sleep 3
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble3"]}' 
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarble","marble3"]}' 
+---------------------------------
+#marble4 추가
+export MARBLE=$(echo -n "{\"name\":\"marble4\",\"color\":\"yellow\",\"size\":20,\"owner\":\"mike\",\"price\":203}" | base64| tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["initMarble"]}'  --transient "{\"marble\":\"$MARBLE\"}"
+sleep 3
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble4"]}' 
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarble","marble4"]}' 
+---------------------------------
+#marble5 추가
+export MARBLE=$(echo -n "{\"name\":\"marble5\",\"color\":\"green\",\"size\":50,\"owner\":\"eric\",\"price\":57}" | base64| tr -d \\n)
+
+peer chaincode invoke -o orderer.example.com:7050 --tls --cafile "$ORDERER_CA"  -C mychannel -n marblesp -c '{"Args":["initMarble"]}'  --transient "{\"marble\":\"$MARBLE\"}"
+sleep 3
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarblePrivateDetails","marble5"]}' 
+peer chaincode query  -C mychannel -n marblesp -c '{"Args":["readMarble","marble5"]}' 
+---------------------------------
+#다양한 query
+peer chaincode query -C mychannel -n marblesp -c '{"Args":["getMarblesByRange","marble1","marble3"]}'
+
+peer chaincode query -C mychannel -n marblesp -c '{"Args":["queryMarblesByOwner","tom"]}'
+
+peer chaincode query -C mychannel -n marblesp -c '{"Args":["queryMarbles","{\"selector\":{\"owner\":\"tom\"}}"]}'
+
+peer chaincode query -C mychannel -n marblesp -c '{"Args":["queryMarbles","{\"selector\":{\"color\":\"blue\"}}"]}'
+
+peer chaincode query -C mychannel -n marblesp -c '{"Args":["queryMarbles","{\"selector\":{\"name\":\"marble1\"}}"]}'
+
+peer chaincode query -C mychannel -n marblesp -c '{"Args":["queryMarbles","{\"selector\":{\"size\":35}}"]}'
+
+peer chaincode query -C mychannel -n marblesp -c '{"Args":["getMarblesByRange","marble1","marble5"]}'
+
+-----------------------------
+couchDB를 웹서버에서 확인 가능
+127.0.0.1:5984/_utils   or localhost:5984/_utils
