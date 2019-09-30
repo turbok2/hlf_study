@@ -1,0 +1,2200 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_01D577F4.FA26CCB0"
+
+�� ������ ���� ���� �� ������(�� ���� ����)�Դϴ�. �� �޽����� ��Ÿ���� ���� ��� ���� �������� �����Ⱑ �� ���� ������ �������� �ʴ� ���Դϴ�. �� ������ �����ϴ� �������� �ٿ�ε��ϼ���.
+
+------=_NextPart_01D577F4.FA26CCB0
+Content-Location: file:///C:/D1943CE2/file3058.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<meta name=3DProgId content=3DOneNote.File>
+<meta name=3DGenerator content=3D"Microsoft OneNote 15">
+<link id=3DMain-File rel=3DMain-File href=3Dfile3058.htm>
+<link rel=3DFile-List href=3D"file3058.files/filelist.xml">
+</head>
+
+<body lang=3Dko style=3D'font-family:나눔스퀘어;font-size:14.0pt'>
+
+<div style=3D'direction:ltr;border-width:100%'>
+
+<div style=3D'direction:ltr;margin-top:0in;margin-left:0in;width:10.1673in'>
+
+<div style=3D'direction:ltr;margin-top:0in;margin-left:.075in;width:4.1173i=
+n'>
+
+<p style=3D'margin:0in;font-size:20.0pt'><span style=3D'font-family:나눔�=
+��퀘어' lang=3Dko>네트워크</span><span
+style=3D'font-family:나눔스퀘어' lang=3Den-US> </span><span style=3D'f=
+ont-family:나눔스퀘어'
+lang=3Dko>구축</span><span style=3D'font-family:나눔스퀘어' lang=3De=
+n-US> </span><span
+style=3D'font-family:나눔스퀘어' lang=3Dko>실습</span><span style=3D=
+'font-family:"Malgun Gothic"'
+lang=3Den-US>2-1 </span><span style=3D'font-family:"Malgun Gothic"' lang=3D=
+ko>leveldb</span></p>
+
+</div>
+
+<div style=3D'direction:ltr;margin-top:.7625in;margin-left:0in;width:10.167=
+3in'>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US># Org1 </span><span lang=3Dko>에</span><span lang=3Den-US> pe=
+er</span><span
+lang=3Dko>를</span><span lang=3Den-US> </span><span lang=3Dko>추가하여=
+</span><span
+lang=3Den-US> </span><span lang=3Dko>총</span><span lang=3Den-US> 2</span>=
+<span
+lang=3Dko>개</span><span lang=3Den-US> peer</span><span lang=3Dko>를</spa=
+n><span
+lang=3Den-US> </span><span lang=3Dko>가진</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>네트워크</span><span lang=3Den-US> </span><span lang=3Dko>구=
+축<br>
+</span><span lang=3Den-US># leveldb </span><span lang=3Dko>사용</span><sp=
+an
+lang=3Den-US> (default)</span><span lang=3Dko><br>
+전체</span><span lang=3Den-US> </span><span lang=3Dko>스크립트는</sp=
+an><span lang=3Den-US>
+basic-network2</span><span lang=3Dko>-1</span><span lang=3Den-US>-leveldb.t=
+ar </span><span
+lang=3Dko>참조</span></p>
+
+<ol type=3D1 style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in;font-family:나눔스퀘어;font-size:14.=
+0pt;
+ font-weight:normal;font-style:normal'>
+ <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'=
+><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Dko>네트워크</span><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt'
+     lang=3Den-US> </span><span style=3D'font-family:"Malgun Gothic";font-s=
+ize:
+     14.0pt;font-weight:normal;font-style:normal;font-family:"Malgun Gothic=
+";
+     font-size:14.0pt' lang=3Dko>개요</span><span style=3D'font-family:"M=
+algun Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Den-US> </span><span style=3D'font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Dko>정리</span></li>
+</ol>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'>Organi=
+zation수:
+1</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'>Channe=
+l</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>채널수: 1</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>채널이름: mychannel</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'>Ordere=
+r</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>Orderer수 : 1<span style=3D'mso-spacerun:yes'>    </span>Concen=
+sus 방식:
+solo</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>주소 및 포트:<span style=3D'mso-spacerun:yes'>  
+</span>orderer.example.com:7050</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'>Ca</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>Ca수 : 1<span style=3D'mso-spacerun:yes'>    </span></p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>주소 및 포트:<span style=3D'mso-spacerun:yes'>   </span>ca.e=
+xample.com:7054</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'>Peer</=
+p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>Organization 별 peer수:</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>Org1 : 2</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>주소 및 포트:</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>Org1 : peer0.org1.example.com:7051</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'><span style=3D'mso-spacerun:yes'>        
+</span>peer1.org1.example.com:8051</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'>Cli</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>주소 및 포트:</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>Org1 : cli.example.com</p>
+
+<p style=3D'margin:0in;margin-left:.375in;font-family:"Malgun Gothic";font-=
+size:
+14.0pt'>&nbsp;</p>
+
+<ol type=3D1 style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in;font-family:나눔스퀘어;font-size:14.=
+0pt;
+ font-weight:normal;font-style:normal'>
+ <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'=
+><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Dko>네트워크</span><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt'
+     lang=3Den-US> </span><span style=3D'font-family:"Malgun Gothic";font-s=
+ize:
+     14.0pt;font-weight:normal;font-style:normal;font-family:"Malgun Gothic=
+";
+     font-size:14.0pt' lang=3Dko>스펙</span><span style=3D'font-family:"M=
+algun Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Den-US> </span><span style=3D'font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Dko>정리</span></li>
+</ol>
+
+<p style=3D'margin:0in;font-family:나눔스퀘어;font-size:14.0pt'>&nbsp;=
+</p>
+
+<p style=3D'margin:0in'><img src=3D"file3058.files/image001.png" width=3D11=
+18
+height=3D903
+alt=3D"orgi / OrgiMSP &#10;orgl.example.com &#10;ca.orgl.example.com &#10;p=
+ort: 7054 &#10;admin / adminpw &#10;Anchor peer &#10;peerO.org1.example.com=
+ &#10;port: 7051 &#10;admin / adminpw &#10;mychannel &#10;bas• &#10;order=
+er &#10;OrdererOrg / OrdererMSP &#10;solo &#10;orderer.example.com:7050 &#1=
+0;peerl.orgl.example.com &#10;port: 8051 &#10;admin / adminpw "></p>
+
+<ol type=3D1 style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in;font-family:나눔스퀘어;font-size:14.=
+0pt;
+ font-weight:normal;font-style:normal'>
+ <li value=3D2 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'=
+><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Dko>네트워크</span><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt'
+     lang=3Den-US> </span><span style=3D'font-family:"Malgun Gothic";font-s=
+ize:
+     14.0pt;font-weight:normal;font-style:normal;font-family:"Malgun Gothic=
+";
+     font-size:14.0pt' lang=3Dko>작성하기</span></li>
+</ol>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Den-US>&nbsp;</p>
+
+<ol type=3D1 style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in;font-family:나눔스퀘어;font-size:14.=
+0pt;
+ font-weight:normal;font-style:normal'>
+ <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'=
+><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt'
+     lang=3Den-US>basic-network2</span><span style=3D'font-family:"Malgun G=
+othic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Dko>을</span><span style=3D'font-family:"Malg=
+un Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Den-US> basic-network2-</span><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Dko>1-</span><span
+     style=3D'font-family:"Malgun Gothic";font-size:14.0pt;font-weight:norm=
+al;
+     font-style:normal;font-family:"Malgun Gothic";font-size:14.0pt'
+     lang=3Den-US>leveldb </span><span style=3D'font-family:"Malgun Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Dko>로</span><span style=3D'font-family:"Malg=
+un Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Den-US> </span><span style=3D'font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Dko>복사한다</span><span style=3D'font-fam=
+ily:"Malgun Gothic";
+     font-size:14.0pt;font-weight:normal;font-style:normal;font-family:"Mal=
+gun Gothic";
+     font-size:14.0pt' lang=3Den-US>.</span></li>
+</ol>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>cp -r basic-network2 basic-network2-</span><span lang=3Dko>1-<=
+/span><span
+lang=3Den-US>leveldb</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>cd basic-network2-</span><span lang=3Dko>1-</span><span lang=
+=3Den-US>leveldb</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Den-US>&nbsp;</p>
+
+<p style=3D'margin:0in;font-size:14.0pt'><span style=3D'font-family:"Malgun=
+ Gothic"'
+lang=3Den-US>2) </span><span style=3D'font-family:나눔스퀘어' lang=3Dk=
+o>configtx.yaml</span><span
+style=3D'font-family:나눔스퀘어' lang=3Den-US> </span><span style=3D'f=
+ont-family:나눔스퀘어'
+lang=3Dko>수정</span><span style=3D'font-family:"Malgun Gothic"' lang=3De=
+n-US><br>
+</span><span style=3D'font-family:"Malgun Gothic"' lang=3Dko>수정</span><=
+span
+style=3D'font-family:"Malgun Gothic"' lang=3Den-US> </span><span style=3D'f=
+ont-family:
+"Malgun Gothic"' lang=3Dko>사항</span><span style=3D'font-family:"Malgun =
+Gothic"'
+lang=3Den-US> </span><span style=3D'font-family:"Malgun Gothic"' lang=3Dko>=
+없음</span><span
+style=3D'font-family:"Malgun Gothic"' lang=3Den-US><br>
+</span>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>3)crypto-config.yaml </span><span lang=3Dko>수정<br>
+수정</span><span lang=3Den-US> </span><span lang=3Dko>사항</span><span =
+lang=3Den-US> </span><span
+lang=3Dko>없음</span><span lang=3Den-US><br>
+<span style=3D'mso-spacerun:yes'> </span></span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>4) generate.sh </span><span lang=3Dko>수정<br>
+상단에</span><span lang=3Den-US> </span><span lang=3Dko>추가</span><sp=
+an lang=3Den-US> #</span><span
+lang=3Dko>향후</span><span lang=3Den-US> </span><span lang=3Dko>채널</s=
+pan><span
+lang=3Den-US> </span><span lang=3Dko>추가에</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>대비하여</span><span lang=3Den-US> </span><span lang=3Dko>변=
+수로</span><span
+lang=3Den-US> </span><span lang=3Dko>지정<br>
+수정</span><span lang=3Den-US> </span><span lang=3Dko>사항</span><span =
+lang=3Den-US> </span><span
+lang=3Dko>없음<br>
+</span><span lang=3Den-US><br>
+5)</span><span lang=3Dko>실행</span><span lang=3Den-US><span
+style=3D'mso-spacerun:yes'>   </span>./generate.sh </span><span lang=3Dko=
+>하지</span><span
+lang=3Den-US> </span><span lang=3Dko>않음</span><span lang=3Den-US> # </s=
+pan><span
+lang=3Dko>조직</span><span lang=3Den-US> </span><span lang=3Dko>변경이=
+</span><span
+lang=3Den-US> </span><span lang=3Dko>없으므로</span><span lang=3Den-US>=
+<br>
+config </span><span lang=3Dko>와</span><span lang=3Den-US> </span><span la=
+ng=3Dko>crypto-config</span><span
+lang=3Den-US> </span><span lang=3Dko>폴더</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>생성</span><span lang=3Den-US> </span><span lang=3Dko>확인</s=
+pan><span
+lang=3Den-US>, tree </span><span lang=3Dko>명령으로</span><span lang=3D=
+en-US> peer1 </span><span
+lang=3Dko>관련</span><span lang=3Den-US> </span><span lang=3Dko>폴더</s=
+pan><span
+lang=3Den-US> </span><span lang=3Dko>생성</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>확인<br>
+</span>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic"'><span style=3D'font-siz=
+e:14.0pt'
+lang=3Den-US>6)docker-compose.yaml </span><span style=3D'font-size:14.0pt' =
+lang=3Dko>수정<br>
+</span><span style=3D'font-size:14.0pt' lang=3Den-US>a. peer</span><span
+style=3D'font-size:14.0pt' lang=3Dko>의</span><span style=3D'font-size:14.=
+0pt'
+lang=3Den-US> couchdb</span><span style=3D'font-size:14.0pt' lang=3Dko>관�=
+��</span><span
+style=3D'font-size:14.0pt' lang=3Den-US> </span><span style=3D'font-size:14=
+.0pt'
+lang=3Dko>내용</span><span style=3D'font-size:14.0pt' lang=3Den-US> </spa=
+n><span
+style=3D'font-size:14.0pt' lang=3Dko>제거</span><span style=3D'font-size:=
+14.0pt'
+lang=3Den-US>(</span><span style=3D'font-size:14.0pt' lang=3Dko>주석</spa=
+n><span
+style=3D'font-size:14.0pt' lang=3Den-US> </span><span style=3D'font-size:14=
+.0pt'
+lang=3Dko>처리</span><span style=3D'font-size:14.0pt' lang=3Den-US>)</spa=
+n><span
+style=3D'font-size:14.0pt' lang=3Dko><br>
+</span><span style=3D'font-size:14.0pt' lang=3Den-US><span
+style=3D'mso-spacerun:yes'>  </span></span><span style=3D'font-size:14.0pt'
+lang=3Dko>peer0.org1.example.com:<br>
+</span><span style=3D'font-size:10.0pt;background:yellow;mso-highlight:yell=
+ow'
+lang=3Dko><span style=3D'mso-spacerun:yes'>      </span># -
+CORE_LEDGER_STATE_STATEDATABASE=3DCouchDB</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span
+style=3D'mso-spacerun:yes'>      </span># -
+CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=3Dcouchdb:5984</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span
+style=3D'mso-spacerun:yes'>      </span># -
+CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=3D</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span
+style=3D'mso-spacerun:yes'>      </span># -
+CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=3D</span><br>
+&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:12.0pt'><span
+style=3D'mso-spacerun:yes'>    </span>depends_on:</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:12.0pt'><span
+style=3D'mso-spacerun:yes'>      </span>- orderer.example.com</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:12.0pt'><span
+style=3D'mso-spacerun:yes'>      </span><span style=3D'background:yell=
+ow;
+mso-highlight:yellow'># - couchdb</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Dko><br>
+</span><span lang=3Den-US><span style=3D'mso-spacerun:yes'>  </span></span=
+><span
+lang=3Dko>peer</span><span lang=3Den-US>1</span><span lang=3Dko>.org1.examp=
+le.com:</span><span
+lang=3Den-US> </span><span lang=3Dko>도</span><span lang=3Den-US> </span><=
+span
+lang=3Dko>동일하게</span><span lang=3Den-US><span style=3D'mso-spacerun=
+:yes'> 
+</span>couchdb</span><span lang=3Dko>관련</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>내용</span><span lang=3Den-US> </span><span lang=3Dko>제거</s=
+pan><span
+lang=3Den-US>(</span><span lang=3Dko>주석</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>처리</span><span lang=3Den-US>)</span><span lang=3Dko><br>
+</span>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>b. couchdb</span><span lang=3Dko>:</span><span lang=3Den-US><s=
+pan
+style=3D'mso-spacerun:yes'>  </span></span><span lang=3Dko>단락의</span=
+><span
+lang=3Den-US> </span><span lang=3Dko>내용</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>제거</span><span lang=3Den-US>(</span><span lang=3Dko>주석</s=
+pan><span
+lang=3Den-US> </span><span lang=3Dko>처리</span><span lang=3Den-US>)</spa=
+n><span
+lang=3Dko><br>
+</span>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span># couchdb:</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>   </span>container_name: couchd=
+b</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>   </span>image:
+hyperledger/fabric-couchdb</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>   </span># Populate the COUCHDB=
+_USER
+and COUCHDB_PASSWORD to set an admin user and password</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>   </span># for CouchDB.<span
+style=3D'mso-spacerun:yes'>  </span>This will prevent CouchDB from operati=
+ng in
+an &quot;Admin Party&quot; mode.</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>   </span>environment:</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>     </span>- COUCHDB_USER=3D<=
+/span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>     </span>- COUCHDB_PASSWORD=
+=3D</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>   </span>ports:</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>     </span>- 5984:5984</span>=
+</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+style=3D'background:yellow;mso-highlight:yellow'><span style=3D'mso-spaceru=
+n:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>   </span>networks:</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic"'><span style=3D'font-siz=
+e:10.0pt;
+background:yellow;mso-highlight:yellow'><span style=3D'mso-spacerun:yes'> 
+</span>#<span style=3D'mso-spacerun:yes'>     </span>- basic</span><span
+style=3D'font-size:14.0pt'><br>
+</span>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>7) start.sh </span><span lang=3Dko>수정<br>
+상단</span><span lang=3Den-US> </span><span lang=3Dko>수정</span><span =
+lang=3Den-US> -
+couchdb </span><span lang=3Dko>내용</span><span lang=3Den-US> </span><spa=
+n lang=3Dko>제거</span><span
+lang=3Den-US>(</span><span lang=3Dko>주석</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>처리</span><span lang=3Den-US>)</span><span lang=3Dko><br>
+<br>
+docker-compose -f docker-compose.yml up -d ca.example.com orderer.example.c=
+om
+peer0.org1.example.com peer1.org1.example.com </span><span style=3D'backgro=
+und:
+yellow;mso-highlight:yellow' lang=3Den-US>#</span><span style=3D'background=
+:yellow;
+mso-highlight:yellow' lang=3Dko>couchdb</span><span lang=3Dko><br>
+</span>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>8) </span><span lang=3Dko>컨테이너가</span><span lang=3De=
+n-US> </span><span
+lang=3Dko>모두</span><span lang=3Den-US> </span><span lang=3Dko>잘</span=
+><span
+lang=3Den-US> </span><span lang=3Dko>실행되었는지</span><span lang=3D=
+en-US> </span><span
+lang=3Dko>확인</span><span lang=3Den-US> - </span><span lang=3Dko>위의<=
+/span><span
+lang=3Den-US> docker ps -a </span><span lang=3Dko>결과</span><span lang=
+=3Den-US> </span><span
+lang=3Dko>확인<br>
+ca.example.com orderer.example.com peer0.org1.example.com
+peer1.org1.example.com <br>
+</span>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>9) </span><span lang=3Dko>피어가</span><span lang=3Den-US> =
+</span><span
+lang=3Dko>채널에</span><span lang=3Den-US> </span><span lang=3Dko>조인=
+되어</span><span
+lang=3Den-US> </span><span lang=3Dko>있는지</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>확인</span><span lang=3Den-US> / </span><span lang=3Dko>피어<=
+/span><span
+lang=3Den-US> </span><span lang=3Dko>노드가</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>실행되고</span><span lang=3Den-US> </span><span lang=3Dko>있=
+는지</span><span
+lang=3Den-US> </span><span lang=3Dko>확인</span></p>
+
+<div style=3D'direction:ltr'>
+
+<table border=3D1 cellpadding=3D0 cellspacing=3D0 valign=3Dtop style=3D'dir=
+ection:ltr;
+ border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-wi=
+dth:
+ 1pt' title=3D"" summary=3D"">
+ <tr>
+  <td style=3D'border-style:solid;border-color:#A3A3A3;border-width:1pt;
+  vertical-align:top;width:3.7534in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec peer0.org1.example.com peer channel list </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+  lang=3Dko>docker exec peer</span><span lang=3Den-US>1</span><span lang=3D=
+ko>.org1.example.com
+  peer channel list </span></p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec peer0.org1.example.com peer node status </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+  lang=3Dko>docker exec peer</span><span lang=3Den-US>1</span><span lang=3D=
+ko>.org1.example.com
+  peer node status </span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div style=3D'direction:ltr'>
+
+<table border=3D1 cellpadding=3D0 cellspacing=3D0 valign=3Dtop style=3D'dir=
+ection:ltr;
+ border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-wi=
+dth:
+ 1pt' title=3D"" summary=3D"">
+ <tr>
+  <td style=3D'border-style:solid;border-color:#A3A3A3;border-width:1pt;
+  vertical-align:top;width:6.209in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>bstud=
+ent@block-VM:~/fabric-samples/basic-network2$
+  docker exec peer0.org1.example.com peer channel list</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>2019-=
+06-20
+  01:39:43.606 UTC [channelCmd] InitCmdFactory -&gt; INFO 001 Endorser and
+  orderer connections initialized</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>Chann=
+els
+  peers has joined: </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>mycha=
+nnel</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>bstud=
+ent@block-VM:~/fabric-samples/basic-network2$
+  docker exec peer1.org1.example.com peer channel list</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>2019-=
+06-20
+  01:39:44.300 UTC [channelCmd] InitCmdFactory -&gt; INFO 001 Endorser and
+  orderer connections initialized</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>Chann=
+els
+  peers has joined: </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>mycha=
+nnel</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>bstud=
+ent@block-VM:~/fabric-samples/basic-network2$
+  docker exec peer0.org1.example.com peer node status </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>statu=
+s:STARTED
+  </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt'>bstud=
+ent@block-VM:~/fabric-samples/basic-network2$
+  docker exec peer1.org1.example.com peer node status</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:8.0pt' lang=
+=3Den-US>status:STARTED
+  </p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Dko>가입된</span><span lang=3Den-US> </span><span lang=3Dko>채널=
+</span><span
+lang=3Den-US>(</span><span lang=3Dx-none>mychannel)</span><span lang=3Dko>�=
+��</span><span
+lang=3Den-US> </span><span lang=3Dko>확인할</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>수</span><span lang=3Den-US> </span><span lang=3Dko>있고</span=
+><span
+lang=3Den-US>, </span><span lang=3Dko>각</span><span lang=3Den-US> </span>=
+<span
+lang=3Dko>피어의</span><span lang=3Den-US> </span><span lang=3Dko>상태=
+를</span><span
+lang=3Den-US> </span><span lang=3Dko>알</span><span lang=3Den-US> </span><=
+span
+lang=3Dko>수</span><span lang=3Den-US> </span><span lang=3Dko>있다</span=
+><span
+lang=3Den-US>.(</span><span lang=3Dx-none>STARTED</span><span lang=3Dko>가=
+</span><span
+lang=3Den-US> </span><span lang=3Dko>정상임</span><span lang=3Den-US>)</=
+span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'>&nbsp;=
+</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>10)</span><span lang=3Dko>체인코드</span><span lang=3Den-U=
+S> </span><span
+lang=3Dko>설치</span><span lang=3Den-US> </span><span lang=3Dko>및</span=
+><span
+lang=3Den-US> </span><span lang=3Dko>실행</span><span lang=3Den-US><br>
+chaincode =3D sacc<span style=3D'mso-spacerun:yes'>  </span>:<span
+style=3D'mso-spacerun:yes'>  </span>chaincode install &amp; instantiate &a=
+mp;
+invoke &amp; query<br>
+cli </span><span lang=3Dko>에서</span><span lang=3Den-US> sacc </span><sp=
+an lang=3Dko>체인코드</span><span
+lang=3Den-US> </span><span lang=3Dko>설치<br>
+</span><span lang=3Den-US>cli </span><span lang=3Dko>에서</span><span lan=
+g=3Den-US>
+sacc </span><span lang=3Dko>체인코드</span><span lang=3Den-US> </span><=
+span lang=3Dko>인스턴스화<br>
+peer0.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dko>에=
+서</span><span
+lang=3Den-US> query </span><span lang=3Dko>로</span><span lang=3Den-US> a =
+</span><span
+lang=3Dko>값</span><span lang=3Den-US> </span><span lang=3Dko>읽어오기=
+</span><span
+lang=3Den-US><span style=3D'mso-spacerun:yes'>  </span>15</span><span lang=
+=3Dko><br>
+peer0.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dko>에=
+서</span><span
+lang=3Den-US> invoke </span><span lang=3Dko>로</span><span lang=3Den-US> a=
+ </span><span
+lang=3Dko>값</span><span lang=3Den-US> </span><span lang=3Dko>변경하기=
+</span><span
+lang=3Den-US> =3D&gt; 130</span><span lang=3Dko><br>
+peer0.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dko>에=
+서</span><span
+lang=3Den-US> query </span><span lang=3Dko>로</span><span lang=3Den-US> a =
+</span><span
+lang=3Dko>값</span><span lang=3Den-US> </span><span lang=3Dko>다시</span=
+><span
+lang=3Den-US> </span><span lang=3Dko>읽어오기</span><span lang=3Den-US>=
+ 130</span><span
+lang=3Dko><br>
+</span><span lang=3Den-US>#</span><span lang=3Dko>peer</span><span lang=3De=
+n-US>1</span><span
+lang=3Dko>.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dk=
+o>에서도</span><span
+lang=3Den-US> </span><span lang=3Dko>동일한</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>값을</span><span lang=3Den-US> </span><span lang=3Dko>읽어올=
+</span><span
+lang=3Den-US> </span><span lang=3Dko>수</span><span lang=3Den-US> </span><=
+span
+lang=3Dko>있어야</span><span lang=3Den-US> </span><span lang=3Dko>하고=
+</span><span
+lang=3Den-US>, </span><span lang=3Dko>값도</span><span lang=3Den-US> </sp=
+an><span
+lang=3Dko>변경할</span><span lang=3Den-US> </span><span lang=3Dko>수</s=
+pan><span
+lang=3Den-US> </span><span lang=3Dko>있어야</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>한다</span><span lang=3Den-US>.</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Dko>peer</span><span lang=3Den-US>1</span><span lang=3Dko>.org1.examp=
+le.com</span><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> query=
+ </span><span
+lang=3Dko>로</span><span lang=3Den-US> a </span><span lang=3Dko>값</span>=
+<span
+lang=3Den-US> </span><span lang=3Dko>읽어오기</span><span lang=3Den-US>=
+ 130</span><span
+lang=3Dko><br>
+peer</span><span lang=3Den-US>1</span><span lang=3Dko>.org1.example.com</sp=
+an><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> invok=
+e </span><span
+lang=3Dko>로</span><span lang=3Den-US> a </span><span lang=3Dko>값</span>=
+<span
+lang=3Den-US> </span><span lang=3Dko>변경하기</span><span lang=3Den-US>=
+ =3D&gt;150</span><span
+lang=3Dko><br>
+peer</span><span lang=3Den-US>1</span><span lang=3Dko>.org1.example.com</sp=
+an><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> query=
+ </span><span
+lang=3Dko>로</span><span lang=3Den-US> a </span><span lang=3Dko>값</span>=
+<span
+lang=3Den-US> </span><span lang=3Dko>다시</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>읽어오기</span><span lang=3Den-US> 150</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Dko>peer</span><span lang=3Den-US>0</span><span lang=3Dko>.org1.examp=
+le.com</span><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> query=
+ </span><span
+lang=3Dko>로</span><span lang=3Den-US> a </span><span lang=3Dko>값</span>=
+<span
+lang=3Den-US> </span><span lang=3Dko>다시</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>읽어오기</span><span lang=3Den-US> 150</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Dko><br>
+</span><span lang=3Den-US><br>
+cc_start_sacc.sh<br>
+-----------------------------------------------------------</span></p>
+
+<div style=3D'direction:ltr'>
+
+<table border=3D1 cellpadding=3D0 cellspacing=3D0 valign=3Dtop style=3D'dir=
+ection:ltr;
+ border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-wi=
+dth:
+ 1pt' title=3D"" summary=3D"">
+ <tr>
+  <td style=3D'border-style:solid;border-color:#A3A3A3;border-width:1pt;
+  vertical-align:top;width:9.7631in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p style=3D'margin:0in;font-family:"Droid Sans Mono";font-size:10.5pt;
+  color:#6A9955'>#!/bin/bash</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># Ex=
+it on
+  first error</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>set =
+-e</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>star=
+ttime=3D$(date
+  +%s)</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CHAN=
+NEL_NAME=3Dmychannel</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_R=
+UNTIME_LANGUAGE=3Dgolang</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_S=
+RC_PATH=3Dgithub.com/sacc</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_N=
+AME=3Dsacc</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_V=
+ERSION=3D1.0</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er-compose
+  -f ./docker-compose.yml up -d cli</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er ps
+  -a</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#ins=
+tall
+  chaincode to peer0.org1.example.com - 각 endoser peer에 모두 설치 <=
+/p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode install=
+ -n
+  &quot;$CC_NAME&quot; -v &quot;$CC_VERSION&quot; -p &quot;$CC_SRC_PATH&quo=
+t;
+  -l &quot;$CC_RUNTIME_LANGUAGE&quot;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#ins=
+tantiate
+  chaincode - 채널 당 한번만 실행 </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># �=
+�스턴스 생성
+  docker ps -a 해보면</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#
+  dev-peer0.org1.example.com-sacc-1.0-xxxx 식의 컨테이너 생성됨</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode instant=
+iate -o
+  orderer.example.com:7050 -C &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&q=
+uot;
+  -l &quot;$CC_RUNTIME_LANGUAGE&quot; -v &quot;$CC_VERSION&quot; -c
+  '{&quot;Args&quot;:[&quot;a&quot;,&quot;15&quot;]}' -P &quot;OR
+  ('Org1MSP.member')&quot;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>slee=
+p 5</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># cl=
+i로
+  실행하면 현재 peer0.org1.example.com 이 CORE_PEER_ADDRESS로 설�=
+�되어 </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#
+  peer0.org1.example.com에서 실행한 것과 동일함</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># do=
+cker
+  exec<span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode invoke =
+-o
+  orderer.example.com:7050 -C &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&q=
+uot;
+  -c '{&quot;Args&quot;:[&quot;get&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># do=
+cker
+  exec<span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode invoke =
+-o
+  orderer.example.com:7050 -C &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&q=
+uot;
+  -c '{&quot;Args&quot;:[&quot;set&quot;,&quot;a&quot;,&quot;110&quot;]}'</=
+p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># sl=
+eep 5</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># do=
+cker
+  exec<span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode query<s=
+pan
+  style=3D'mso-spacerun:yes'>  </span>-C &quot;$CHANNEL_NAME&quot; -n
+  &quot;$CC_NAME&quot; -c '{&quot;Args&quot;:[&quot;get&quot;,&quot;a&quot;=
+]}'</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;get&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode invoke<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;set&quot;,&quot;a&quot;,&quot;130&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>slee=
+p 5</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;get&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#ins=
+tall
+  chaincode to peer1.org1.example.com - 각 endoser peer에 모두 설치 <=
+/p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+  lang=3Dko>docker exec -e CORE_PEER_ADDRESS=3Dpeer1.org1.example.com:</spa=
+n><span
+  lang=3Den-US>8</span><span lang=3Dko>051<span style=3D'mso-spacerun:yes'>=
+ 
+  </span>cli peer chaincode install -n &quot;$CC_NAME&quot; -v
+  &quot;$CC_VERSION&quot; -p &quot;$CC_SRC_PATH&quot; -l
+  &quot;$CC_RUNTIME_LANGUAGE&quot;</span></p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># en=
+doser
+  peer에서 처음 query 수행하면 인스턴스 생성됨 docker ps -a =
+해보면</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#
+  dev-peer1.org1.example.com-sacc-1.0-xxxx 식의 컨테이너 생성됨</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;get&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode invoke<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;set&quot;,&quot;a&quot;,&quot;150&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>slee=
+p 5</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;get&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;get&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>cat
+  &lt;&lt;EOF</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>Total
+  setup execution time : $(($(date +%s) - starttime)) secs ...</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>EOF<=
+/p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US>11)</span><span lang=3Dko>체인코드</span><span lang=3Den-U=
+S> </span><span
+lang=3Dko>설치</span><span lang=3Den-US> </span><span lang=3Dko>및</span=
+><span
+lang=3Den-US> </span><span lang=3Dko>실행</span><span lang=3Den-US><br>
+chaincode =3D example02<span style=3D'mso-spacerun:yes'>  </span>:<span
+style=3D'mso-spacerun:yes'>  </span>chaincode install &amp; instantiate &a=
+mp;
+invoke &amp; query<br>
+cli </span><span lang=3Dko>에서</span><span lang=3Den-US> example02 </spa=
+n><span
+lang=3Dko>체인코드</span><span lang=3Den-US> </span><span lang=3Dko>설=
+치<br>
+</span><span lang=3Den-US>cli </span><span lang=3Dko>에서</span><span lan=
+g=3Den-US>
+example02 </span><span lang=3Dko>체인코드</span><span lang=3Den-US> </s=
+pan><span
+lang=3Dko>인스턴스화<br>
+peer0.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dko>에=
+서</span><span
+lang=3Den-US> query </span><span lang=3Dko>로</span><span lang=3Den-US> a,=
+b </span><span
+lang=3Dko>값</span><span lang=3Den-US> </span><span lang=3Dko>읽어오기=
+</span><span
+lang=3Den-US> 100<span style=3D'mso-spacerun:yes'>  </span>200</span><span=
+ lang=3Dko><br>
+peer0.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dko>에=
+서</span><span
+lang=3Den-US> invoke </span><span lang=3Dko>로</span><span lang=3Den-US> a=
+,b </span><span
+lang=3Dko>값</span><span lang=3Den-US> </span><span lang=3Dko>변경하기=
+</span><span
+lang=3Den-US><span style=3D'mso-spacerun:yes'>  </span>=3D&gt;a,b,10</span=
+><span
+lang=3Dko><br>
+peer0.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dko>에=
+서</span><span
+lang=3Den-US> query </span><span lang=3Dko>로</span><span lang=3Den-US> a,=
+b </span><span
+lang=3Dko>값</span><span lang=3Den-US> </span><span lang=3Dko>다시</span=
+><span
+lang=3Den-US> </span><span lang=3Dko>읽어오기</span><span lang=3Den-US>=
+ 90<span
+style=3D'mso-spacerun:yes'>  </span>210</span><span lang=3Dko><br>
+</span><span lang=3Den-US>#</span><span lang=3Dko>peer</span><span lang=3De=
+n-US>1</span><span
+lang=3Dko>.org1.example.com</span><span lang=3Den-US> </span><span lang=3Dk=
+o>에서도</span><span
+lang=3Den-US> </span><span lang=3Dko>동일한</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>값을</span><span lang=3Den-US> </span><span lang=3Dko>읽어올=
+</span><span
+lang=3Den-US> </span><span lang=3Dko>수</span><span lang=3Den-US> </span><=
+span
+lang=3Dko>있어야</span><span lang=3Den-US> </span><span lang=3Dko>하고=
+</span><span
+lang=3Den-US>, </span><span lang=3Dko>값도</span><span lang=3Den-US> </sp=
+an><span
+lang=3Dko>변경할</span><span lang=3Den-US> </span><span lang=3Dko>수</s=
+pan><span
+lang=3Den-US> </span><span lang=3Dko>있어야</span><span lang=3Den-US> </=
+span><span
+lang=3Dko>한다</span><span lang=3Den-US>.</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Dko>peer</span><span lang=3Den-US>1</span><span lang=3Dko>.org1.examp=
+le.com</span><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> query=
+ </span><span
+lang=3Dko>로</span><span lang=3Den-US> a,b </span><span lang=3Dko>값</spa=
+n><span
+lang=3Den-US> </span><span lang=3Dko>읽어오기</span><span lang=3Den-US>=
+ 90 210</span><span
+lang=3Dko><br>
+peer</span><span lang=3Den-US>1</span><span lang=3Dko>.org1.example.com</sp=
+an><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> invok=
+e </span><span
+lang=3Dko>로</span><span lang=3Den-US> a,b </span><span lang=3Dko>값</spa=
+n><span
+lang=3Den-US> </span><span lang=3Dko>변경하기</span><span lang=3Den-US>=
+ =3D&gt; a,b,5</span><span
+lang=3Dko><br>
+peer</span><span lang=3Den-US>1</span><span lang=3Dko>.org1.example.com</sp=
+an><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> query=
+ </span><span
+lang=3Dko>로</span><span lang=3Den-US> a,b </span><span lang=3Dko>값</spa=
+n><span
+lang=3Den-US> </span><span lang=3Dko>다시</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>읽어오기</span><span lang=3Den-US> 85, 215</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Dko>peer</span><span lang=3Den-US>0</span><span lang=3Dko>.org1.examp=
+le.com</span><span
+lang=3Den-US> </span><span lang=3Dko>에서</span><span lang=3Den-US> query=
+ </span><span
+lang=3Dko>로</span><span lang=3Den-US> a,b </span><span lang=3Dko>값</spa=
+n><span
+lang=3Den-US> </span><span lang=3Dko>다시</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>읽어오기</span><span lang=3Den-US> 85, 215</span></p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Den-US>&nbsp;</p>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt' lang=
+=3Den-US>cc_start.example02.sh<br>
+------------------------------------------------------------------------</p>
+
+<div style=3D'direction:ltr'>
+
+<table border=3D1 cellpadding=3D0 cellspacing=3D0 valign=3Dtop style=3D'dir=
+ection:ltr;
+ border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-wi=
+dth:
+ 1pt' title=3D"" summary=3D"">
+ <tr>
+  <td style=3D'border-style:solid;border-color:#A3A3A3;border-width:1pt;
+  vertical-align:top;width:9.7076in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p style=3D'margin:0in;font-family:"Droid Sans Mono";font-size:10.5pt;
+  color:#6A9955'>#!/bin/bash</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># Ex=
+it on
+  first error</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>set =
+-e</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>star=
+ttime=3D$(date
+  +%s)</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CHAN=
+NEL_NAME=3Dmychannel</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_R=
+UNTIME_LANGUAGE=3Dgolang</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_S=
+RC_PATH=3Dgithub.com/chaincode_example02/go</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_N=
+AME=3Dexample02</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>CC_V=
+ERSION=3D1.0</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er-compose
+  -f ./docker-compose.yml up -d cli</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er ps
+  -a</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#ins=
+tall
+  chaincode to peer0.org1.example.com - 각 endoser peer에 모두 설치 <=
+/p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode install=
+ -n
+  &quot;$CC_NAME&quot; -v &quot;$CC_VERSION&quot; -p &quot;$CC_SRC_PATH&quo=
+t;
+  -l &quot;$CC_RUNTIME_LANGUAGE&quot;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#ins=
+tantiate
+  chaincode - 채널 당 한번만 실행 </p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># �=
+�스턴스 생성
+  docker ps -a 해보면</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#
+  dev-peer0.org1.example.com-example02-1.0-xxxx 식의 컨테이너 생성�=
+��</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode instant=
+iate -o
+  orderer.example.com:7050 -C &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&q=
+uot;
+  -l &quot;$CC_RUNTIME_LANGUAGE&quot; -v &quot;$CC_VERSION&quot; -c
+  '{&quot;Args&quot;:[&quot;init&quot;,&quot;a&quot;,&quot;100&quot;,&quot;=
+b&quot;,&quot;200&quot;]}'
+  -P &quot;OR ('Org1MSP.member')&quot;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>slee=
+p 5</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;b&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode invoke<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;invoke&quot;,&quot;a&quot;,&quot;b&quot;,&quot;=
+10&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>slee=
+p 5</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;b&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#ins=
+tall
+  chaincode to peer1.org1.example.com - 각 endoser peer에 모두 설치 <=
+/p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'><span
+  lang=3Dko>docker exec -e CORE_PEER_ADDRESS=3Dpeer1.org1.example.com:</spa=
+n><span
+  style=3D'background:yellow;mso-highlight:yellow' lang=3Den-US>8</span><sp=
+an
+  style=3D'background:yellow;mso-highlight:yellow' lang=3Dko>051</span><span
+  lang=3Dko><span style=3D'mso-spacerun:yes'>  </span>cli peer chaincode i=
+nstall -n
+  &quot;$CC_NAME&quot; -v 1.0 -p &quot;$CC_SRC_PATH&quot; -l
+  &quot;$CC_RUNTIME_LANGUAGE&quot;</span></p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># en=
+doser
+  peer에서 처음 query 수행하면 인스턴스 생성됨 docker ps -a =
+해보면</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>#
+  dev-peer1.org1.example.com-example02-1.0-xxxx 식의 컨테이너 생성�=
+��</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;b&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode invoke<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;invoke&quot;,&quot;a&quot;,&quot;b&quot;,&quot;=
+5&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>slee=
+p 5</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer1.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;b&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;a&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er
+  exec<span style=3D'mso-spacerun:yes'>  </span>peer0.org1.example.com peer
+  chaincode query<span style=3D'mso-spacerun:yes'>  </span>-C
+  &quot;$CHANNEL_NAME&quot; -n &quot;$CC_NAME&quot; -c
+  '{&quot;Args&quot;:[&quot;query&quot;,&quot;b&quot;]}'</p>
+  <p style=3D'margin:0in;font-family:나눔스퀘어;font-size:10.0pt'>&nbs=
+p;</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>cat
+  &lt;&lt;EOF</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>Total
+  setup execution time : $(($(date +%s) - starttime)) secs ...</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>EOF<=
+/p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><span
+lang=3Den-US><br>
+12)teardown.sh </span><span lang=3Dko>수정<br>
+기동중인</span><span lang=3Den-US> </span><span lang=3Dko>네트워크�=
+��</span><span lang=3Den-US>
+</span><span lang=3Dko>정지할</span><span lang=3Den-US> </span><span lan=
+g=3Dko>때</span><span
+lang=3Den-US> </span><span lang=3Dko>사용</span><span lang=3Den-US>. chai=
+ncode</span><span
+lang=3Dko>가</span><span lang=3Den-US> </span><span lang=3Dko>인스턴트=
+화되면</span><span
+lang=3Den-US> </span><span lang=3Dko>컨테이너가</span><span lang=3Den-=
+US> </span><span
+lang=3Dko>추가되므로</span><span lang=3Den-US> </span><span lang=3Dko>=
+다음과</span><span
+lang=3Den-US> </span><span lang=3Dko>같이</span><span lang=3Den-US> </spa=
+n><span
+lang=3Dko>수정</span></p>
+
+<div style=3D'direction:ltr'>
+
+<table border=3D1 cellpadding=3D0 cellspacing=3D0 valign=3Dtop style=3D'dir=
+ection:ltr;
+ border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-wi=
+dth:
+ 1pt' title=3D"" summary=3D"">
+ <tr>
+  <td style=3D'border-style:solid;border-color:#A3A3A3;border-width:1pt;
+  vertical-align:top;width:9.7006in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># do=
+cker
+  rm $(docker ps -aq)</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'># do=
+cker
+  rmi $(docker images dev-* -q)</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er rm
+  $(docker ps -aq -f 'name=3Ddev-*') || true</p>
+  <p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:10.0pt'>dock=
+er rmi
+  $(docker images dev-* -q)</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style=3D'margin:0in;font-family:"Malgun Gothic";font-size:14.0pt'><br>
+&nbsp;</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style=3D'margin:0in'>&nbsp;</p>
+
+<p style=3D'text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Microsoft OneNote 2016에서 작성</p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_01D577F4.FA26CCB0
+Content-Location: file:///C:/D1943CE2/file3058.files/image001.png
+Content-Transfer-Encoding: base64
+Content-Type: image/png
+
+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
+
+------=_NextPart_01D577F4.FA26CCB0
+Content-Location: file:///C:/D1943CE2/file3058.files/filelist.xml
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/xml; charset="utf-8"
+
+<xml xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+ <o:MainFile HRef=3D"../file3058.htm"/>
+ <o:File HRef=3D"image001.png"/>
+ <o:File HRef=3D"filelist.xml"/>
+</xml>
+------=_NextPart_01D577F4.FA26CCB0--
