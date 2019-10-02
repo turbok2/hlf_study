@@ -1,4 +1,4 @@
---------------------------------------------------------------------------------------
+﻿--------------------------------------------------------------------------------------
 prerequisites
 --------------------------------------------------------------------------------------
 #curl install
@@ -49,10 +49,11 @@ vi ~/.profile   #아래 내용 추가
 	export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:~/fabric-samples/bin
 	
 source ~/.profile
-crpytogen   # 실행 여부 확인
+cryptogen   # 실행 여부 확인
 ls
+sudo apt install tree
 tree –L 1 ./fabric-samples/
-
+docker images
 --------------------------------------------------------------------------------------
 Writing Your First Application
 --------------------------------------------------------------------------------------
@@ -93,7 +94,7 @@ docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/g
 
 docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n fabcar -c '{"function":"createCar","Args":["CAR20","Hyundai","sonata","red","eric"]}'
 
-docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query -C mychannel -n fabcar -c '{"function":"queryAllCars","Args":["CAR20"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query -C mychannel -n fabcar -c '{"function":"queryCar","Args":["CAR20"]}'
 
 --------------------------------------------------------------------------------------
 REST API 테스트 방법
