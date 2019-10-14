@@ -397,10 +397,14 @@ docker exec  peer0.org1.example.com peer chaincode query  -C "$CHANNEL_NAME" -n 
 docker exec  peer0.org1.example.com peer chaincode invoke  -C "$CHANNEL_NAME" -n sacc -c '{"Args":["set","a","130"]}'
 
 D. terminate network
-1. 종료 스크립트 이용   ./teardown.sh  ./byfn.sh down 등 
-2. 사용한 docker-compose.yml 을 이용   docker-compose -f docker-compose.yml up 
-3. 직접 종료  docker rm $(docker ps -aq)  docker rmi $(docker images dev-* -q)
-4. 네트워크 삭제  docker network prune
+1. 종료 스크립트 이용
+   ./teardown.sh  ./byfn.sh down 등 
+2. 사용한 docker-compose.yml 을 이용     
+docker-compose -f docker-compose.yml up 
+3. 직접 종료    
+docker rm $(docker ps -aq)
+docker rmi $(docker images dev-* -q)
+4. 네트워크 삭제    docker network prune
 
 --------------------------------------------------------------------------------------
 Using Private Data in Fabric
@@ -546,7 +550,7 @@ marble1 이 ininMarble 에 의해 invoke 된 후 블록번호는 6
 그 다음 invoke 후 블록번호 증가하여 7 일때는 query가 가능
 그 다음 invoke 후 블록번호 증가하여 8 일때는 query가 가능
 그 다음 invoke 후 블록번호 증가하여 9 일때는 query가 가능
-그 다음 invoke 후 블록번호 증가하여 10일 때는 blockToLive 값 3 이 지나 marble1은 삭제되었고 query가 되지 않는다.
+그 다음 invoke 후 블록번호 증가하여 10일 때는   blockToLive 값 3 이 지나 marble1은 삭제되었고 query가 되지 않는다.
 
 #Using indexes with private data
 #marble3 추가
